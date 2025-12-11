@@ -1,0 +1,10 @@
+**/__pycache__/
+_old/
+.venv/
+capture_anypoint/
+crestereo/
+detect_center/
+intel_d435i/
+loftr/loftr_results/
+loftr/output_3d/*
+!loftr/output_3d/3d_point_cloud_jet.html
