@@ -10,26 +10,9 @@ import plotly.graph_objects as go
 # 您的資料檔案路徑
 file_path = "output_3d/3d.csv"
 # 輸出 HTML 檔案名稱
-output_html_file = "output_3d/3d_point_cloud_jet.html"
-
-# =================================================================
-# 測試數據生成 (如果您還沒有 output_3d/3d.csv，請取消以下註解執行一次)
-# =================================================================
-"""
-os.makedirs('output_3d', exist_ok=True)
-n_points = 5000
-data = {
-    'X_mm': np.random.uniform(-500, 500, n_points),
-    'Y_mm': np.random.uniform(-500, 500, n_points),
-    'Z_mm': np.random.uniform(0, 1000, n_points),
-}
-# 模擬深度數據 (0.5m 到 1.5m 之間)
-data['Depth_m'] = data['Z_mm'] / 1000 + 0.5 + np.random.uniform(-0.1, 0.1, n_points)
-df_test = pd.DataFrame(data)
-df_test.to_csv(file_path, index=False)
-print(f"✅ 測試用 CSV 已建立於 {file_path}")
-"""
-# =================================================================
+output_html_file = "docs"
+os.makedirs(output_html_file, exist_ok=True)
+output_html_file = os.path.join(output_html_file, "3d_point_cloud_jet.html")
 
 
 # 檢查檔案是否存在
