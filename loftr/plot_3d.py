@@ -12,7 +12,7 @@ file_path = "output_3d/3d.csv"
 # 輸出 HTML 檔案名稱
 output_html_file = "docs"
 os.makedirs(output_html_file, exist_ok=True)
-output_html_file = os.path.join(output_html_file, "3d_point_cloud_jet.html")
+output_html_file = os.path.join(output_html_file, "index.html")
 
 
 # 檢查檔案是否存在
